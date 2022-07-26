@@ -29,6 +29,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
   sonar:
+    if: ${{ false }}
     needs: build
     name: sonar
     runs-on: windows-latest
