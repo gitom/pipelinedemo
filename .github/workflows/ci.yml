@@ -28,4 +28,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Build the Docker image
-      run: docker build PipelineDemo.API --tag pipelineapi:$(date +%s)
+      run: docker build PipelineDemo.API --file Dockerfile --tag pipelineapi:$(date +%s)
