@@ -1,9 +1,5 @@
 name: Static code analysis
-on:
- workflow_run:
-    workflows: [.NET CI]
-    types:
-      - completed
+
 
 defaults:
   run:
