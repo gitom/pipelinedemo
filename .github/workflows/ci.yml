@@ -78,4 +78,4 @@ jobs:
         working-directory: .
     steps:
     - name: Build the Docker image
-      run: docker build --file "PipelineDemo.API/Dockerfile" . --tag pipelineapi:$(date +%s)
+      run: docker build PipelineDemo.API --tag pipelineapi:$(date +%s)
