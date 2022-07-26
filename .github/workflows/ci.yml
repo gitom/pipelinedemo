@@ -73,6 +73,9 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: PipelineDemo
     steps:
     - name: Build the Docker image
-      run: docker build . ./PipelineDemo.API/Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file ./PipelineDemo.API/Dockerfile --tag my-image-name:$(date +%s)
