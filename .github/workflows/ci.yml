@@ -75,4 +75,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build the Docker image
-      run: docker build ./PipelineDemo.API/Dockerfile
+      run: docker build . ./PipelineDemo.API/Dockerfile --tag my-image-name:$(date +%s)
