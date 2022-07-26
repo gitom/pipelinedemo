@@ -75,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: PipelineDemo
+        working-directory: .
     steps:
     - name: Build the Docker image
       run: docker build --file "PipelineDemo.API/Dockerfile" . --tag pipelineapi:$(date +%s)
