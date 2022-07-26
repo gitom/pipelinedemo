@@ -11,6 +11,10 @@ on:
     types:
       - completed
 
+defaults:
+  run:
+    working-directory: PipelineDemo
+    
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
