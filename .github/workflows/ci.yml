@@ -33,4 +33,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build the Docker image
-      run: docker build PipelineDemo.API --tag pipelineapi:$(date +%s)
+      run: docker build PipelineDemo.API -f PipelineDemo.API/Dockerfile --tag pipelineapi:$(date +%s)
