@@ -10,10 +10,6 @@ on:
     workflows: [.NET CI]
     types:
       - completed
-
-defaults:
-  run:
-    working-directory: PipelineDemo.API
     
 env:
   # Use docker.io for Docker Hub if empty
