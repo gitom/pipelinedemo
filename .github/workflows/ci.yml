@@ -88,7 +88,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          file: ./PipelineDemo.API/Dockerfile
+          file: ./PipelineDemo/PipelineDemo.API/Dockerfile
 
       # - name: Build the Docker image
       #   run: docker build . --file ./PipelineDemo.API/Dockerfile --tag pipelinedemoapi:$(date +%s)
